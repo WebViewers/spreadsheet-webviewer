@@ -1,5 +1,5 @@
-# Resilience EditText
-Basic text editing web gadget based on Resilience RenderJs/JIO
+# Resilience Spreadsheet
+Jquery.sheet spreadsheet editor based on Resilience RenderJs/JIO
 
 **NOTE:** This .zip format is not yet standardized and is yet likely to change!
 
