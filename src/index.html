@@ -1,0 +1,20 @@
+<html>
+<head>
+<script>
+require(['jquery'], function($) {
+  var gadget = $('#spreadsheet-gadget').parent();
+  var path = gadget.attr('data-gadget').replace(/\/[^/]*$/, '');
+  var properties = JSON.parse(gadget.attr('data-gadget-property'));
+  properties.width = properties.width || 780;
+  properties.height = properties.height || 420;
+  $('#spreadsheet-gadget').css({width:properties.width, height:properties.height});
+  require(['.' + path + '/resilience-main'], function(main) {
+    main(properties);
+  });
+});
+</script>
+</head>
+<body>
+<iframe id="spreadsheet-gadget" src="javascript:''"></iframe>
+</body>
+</html>
