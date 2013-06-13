@@ -16,9 +16,10 @@
         "test": "node test/run.js"
     },
     "resilience": {
-        "main": "index.html",
+        "main": "index.js",
         "actions": {
-            "edit": ["jqs"]
+            "edit": ["jqs"],
+            "view": ["jqs"]
         }
     }
 }
