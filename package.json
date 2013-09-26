@@ -16,7 +16,8 @@
         "test": "node test/run.js"
     },
     "resilience": {
-        "main": "index.js",
+        "modelVersion":"0.1",
+        "main": "jquery.sheet-2.0.0/index2.html",
         "actions": {
             "edit": ["jqs"],
             "view": ["jqs"]
