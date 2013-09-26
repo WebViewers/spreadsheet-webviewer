@@ -17,7 +17,7 @@
     });
 
   }).declareMethod('getContent', function () {
-    return JSON.stringify(sheet.exportSheet.json());
+    return JSON.stringify($('#jQuerySheet0').getSheet().exportSheet.json());
 
   }).declareMethod('setReadOnly', function (isReadOnly) {
 
