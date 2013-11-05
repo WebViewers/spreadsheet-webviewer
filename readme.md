@@ -1,12 +1,9 @@
-# Resilience Spreadsheet
-Jquery.sheet spreadsheet editor based on Resilience RenderJs/JIO
-
-**NOTE:** This .zip format is not yet standardized and is yet likely to change!
+# Spreadsheet WebViewer
+Jquery.sheet based spreadsheet editor adapted to WebViewer API.
 
 To build:
 
-    npm install -g resilience-tools
+    npm install
     ./do
 
-Install the resulting .zip file in a container such as
-https://github.com/cjdelisle/xwiki-contrib-resilience
+For more information about WebViewers see: http://webviewers.org/

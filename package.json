@@ -1,19 +1,13 @@
 {
-    "author": "Caleb James DeLisle",
     "name": "spreadsheet",
-    "description": "Resilience packaged jQuery.sheet",
+    "description": "jQuery.sheet spreadsheet editing WebViewer",
     "version": "0.1.0",
     "repository": {
-        "url": "https://github.com/cjdelisle/resilience-spreadsheet.git",
+        "url": "https://github.com/WebViewers/spreadsheet-webviewer.git",
         "type": "git"
     },
-    "devDependencies": {
-    },
-    "__IGNORE__engines": {
-        "node": "*"
-    },
-    "scripts": {
-        "test": "node test/run.js"
+    "dependencies": {
+        "resilience-tools": "~0.3.3"
     },
     "resilience": {
         "modelVersion":"0.1",
