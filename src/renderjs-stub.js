@@ -6,6 +6,12 @@
   if (window.self === window.top) {
     return;
   }
+  var rJSStub = function (window) {
+    return { ready: function (func) { readyList.push(func); } };
+  };
+  var rJS = function (window) {
+    return rJSStub(window);
+  };
   var readyList = [];
   var cookie = ''+Math.random();
   var onMessage = function (event) {
@@ -35,9 +41,12 @@
       if (root.ready === readyList.push) {
         throw new Error("RenderJS not loaded");
       }
+      rJSStub = window.rJS;
+      for (var x in window.rJS) {
+        rJS[x] = window.rJS[x];
+      }
       for (var i = 0; i < readyList.length; i++) {
         root.ready(readyList[i]);
-        //readyList[i](root);
       }
     }
   }
@@ -48,8 +57,6 @@
   }
   window.top.postMessage({cookie:cookie, id:"renderjs-stub-request"}, '*');
 
-  window.renderJS = window.rJS = function (window) {
-    return { ready: function (func) { readyList.push(func); } };
-  };
+  window.renderJS = window.rJS = rJS;
 
 }(window, document));
