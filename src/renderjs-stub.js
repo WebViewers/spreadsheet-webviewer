@@ -55,7 +55,7 @@
   } else {
     window.attachEvent('onmessage', onMessage);
   }
-  window.top.postMessage({cookie:cookie, id:"renderjs-stub-request"}, '*');
+  window.top.postMessage(JSON.stringify({cookie:cookie, id:"renderjs-stub-request"}), '*');
 
   window.renderJS = window.rJS = rJS;
 
