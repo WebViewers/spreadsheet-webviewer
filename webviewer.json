@@ -1,0 +1,15 @@
+{
+    "modelVersion":"0.1",
+    "name": "spreadsheet",
+    "description": "jQuery.sheet spreadsheet editing WebViewer",
+    "version": "0.1.0",
+    "repository": {
+        "url": "https://github.com/WebViewers/spreadsheet-webviewer.git",
+        "type": "git"
+    },
+    "main": "jquery.sheet-2.0.0/index2.html",
+    "actions": {
+        "edit": ["jqs"],
+        "view": ["jqs"]
+    }
+}
