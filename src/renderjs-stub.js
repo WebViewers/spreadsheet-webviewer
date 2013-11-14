@@ -1,5 +1,5 @@
 /* -*- Mode: js; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- */
-/*! webviewer-stub v0.1  */
+/*! renderjs-stub v0.1  */
 /*global window, document */
 ;(function (window, document) {
   "use strict";
@@ -59,7 +59,6 @@
     } else {
       document.attachEvent('renderjs:ready', check);
     }
-    scr.onload = check;
   }
   if (window.addEventListener) {
     window.addEventListener('message', onMessage);
