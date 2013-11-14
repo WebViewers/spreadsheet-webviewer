@@ -1,15 +1,19 @@
 {
     "modelVersion":"0.1",
+    "author": "Caleb James DeLisle, XWiki SAS",
     "name": "spreadsheet",
     "description": "jQuery.sheet spreadsheet editing WebViewer",
     "version": "0.1.0",
-    "repository": {
-        "url": "https://github.com/WebViewers/spreadsheet-webviewer.git",
-        "type": "git"
-    },
-    "main": "jquery.sheet-2.0.0/index2.html",
+    "releaseStatus": "beta",
     "actions": {
         "edit": ["jqs"],
         "view": ["jqs"]
-    }
+    },
+    "sourceURL": "https://github.com/WebViewers/spreadsheet-webviewer.git",
+    "license": "http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html",
+    "type": "office",
+    "originalDeveloper": "http://visop-dev.com",
+    "viewerLicense": "http://opensource.org/licenses/MIT",
+    "viewerURL": "https://github.com/Spreadsheets/jQuery.sheet",
+    "main": "jquery.sheet-2.0.0/index2.html"
 }
